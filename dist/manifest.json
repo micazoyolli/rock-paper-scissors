@@ -1,0 +1,17 @@
+{
+  "name": "Piedra, papel o tijeras",
+  "short_name": "RPS Game",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#687ab5",
+  "theme_color": "#687ab5",
+  "lang": "es",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ]
+}
