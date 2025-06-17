@@ -27,17 +27,16 @@ export const playMatch = () => {
         opt.disabled = true
       })
 
-      playerHand.src = '/assets/hands/rock.png'
-      computerHand.src = '/assets/hands/rock.png'
+      // Ejecutar animación
+      playerHand.style.animation = 'shakePlayer 2s ease'
+      computerHand.style.animation = 'shakeComputer 2s ease'
 
+      // Esperar y luego cambiar las imágenes
       setTimeout(() => {
         compareHands(this.className, computerChoice)
         playerHand.src = `/assets/hands/${this.className}.png`
         computerHand.src = `/assets/hands/${computerChoice}.png`
       }, 2000)
-
-      playerHand.style.animation = 'shakePlayer 2s ease'
-      computerHand.style.animation = 'shakeComputer 2s ease'
     })
   })
 }
