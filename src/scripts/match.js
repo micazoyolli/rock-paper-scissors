@@ -1,10 +1,13 @@
 let pScore = 0
 let cScore = 0
 
+let playerHand
+let computerHand
+
 export const playMatch = () => {
   const options = document.querySelectorAll('.options button')
-  const playerHand = document.querySelector('.player-hand')
-  const computerHand = document.querySelector('.computer-hand')
+  playerHand = document.querySelector('.player-hand')
+  computerHand = document.querySelector('.computer-hand')
   const hands = document.querySelectorAll('.hands img')
   const computerOptions = ['rock', 'paper', 'scissors']
 
@@ -34,8 +37,8 @@ export const playMatch = () => {
       // Esperar y luego cambiar las imágenes
       setTimeout(() => {
         compareHands(this.className, computerChoice)
-        playerHand.src = '/rock-paper-scissors/assets/hands/' + this.className + '.png'
-        computerHand.src = '/rock-paper-scissors/assets/hands/' + computerChoice + '.png'
+        playerHand.src = './assets/hands/' + this.className + '.png'
+        computerHand.src = './assets/hands/' + computerChoice + '.png'
       }, 2000)
     })
   })
@@ -104,19 +107,21 @@ const updateScore = () => {
   const computerResult = document.querySelector('.wrapper-computer-score .result-icon')
 
   setTimeout(() => {
-    // Ocultar resultado
     playerResult.classList.remove('fadeIn', 'win', 'lose', 'tie')
     computerResult.classList.remove('fadeIn', 'win', 'lose', 'tie')
     playerResult.classList.add('fadeOut')
     computerResult.classList.add('fadeOut')
 
-    // Mostrar nuevo score
     playerScore.textContent = pScore
     computerScore.textContent = cScore
     playerScore.classList.remove('fadeOut')
     playerScore.classList.add('fadeIn')
     computerScore.classList.remove('fadeOut')
     computerScore.classList.add('fadeIn')
+
+    // 🌀 Restaurar ambas manos al puño cerrado (rock)
+    playerHand.src = './assets/hands/rock.png'
+    computerHand.src = './assets/hands/rock.png'
 
     options.forEach(option => {
       option.style.opacity = 1
