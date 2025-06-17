@@ -1,6 +1,6 @@
 # ✊ Piedra, Papel o Tijeras
 
-Juego interactivo de piedra, papel o tijeras con animaciones, puntaje y lógica de juego modular. Proyecto actualizado con Vite y buenas prácticas modernas.
+Juego interactivo de piedra, papel o tijeras con animaciones, puntaje y lógica de juego modular. Proyecto desarrollado con Vite y buenas prácticas modernas.
 
 <img alt="Rock, Paper, Scissors" src="https://github.com/micazoyolli/rock-paper-scissors/blob/master/public/assets/screenshot.png" width="500" />
 
