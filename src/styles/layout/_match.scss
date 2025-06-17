@@ -1,0 +1,22 @@
+@use '../utils/variables' as *;
+
+.hands,
+.options {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  .player-hand,
+  .computer-hand {
+    width: 43%;
+  }
+
+  .computer-hand {
+    margin-left: 15px;
+  }
+
+  .player-hand {
+    margin-right: 15px;
+    transform: rotateY(180deg);
+  }
+}

@@ -1,0 +1,53 @@
+@use '../utils/variables' as *;
+
+@media (min-width: 768px) {
+  .intro {
+    flex-direction: row;
+    gap: 0;
+    margin-top: 0;
+
+    .intro-hands {
+      max-width: 500px;
+    }
+
+    button {
+      height: 60px;
+      left: 50%;
+      position: absolute;
+      top: 40%;
+      transform: translateX(-35%);
+      width: 120px;
+    }
+  }
+
+  .score {
+    width: 80%;
+
+    .wrapper-player-score,
+    .wrapper-computer-score {
+      .player-score,
+      .computer-score {
+        height: 6.25rem;
+        width: 6.25rem;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .score-text,
+      .result-icon {
+        bottom: -40px;
+        font-size: 2.1875rem; // 35px
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+
+  .match button {
+    height: 100px;
+    margin: 50px 10px;
+    width: 100px;
+  }
+}

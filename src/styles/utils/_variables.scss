@@ -1,0 +1,29 @@
+// 🎨 Colores
+$color-accent: #687ab5;
+$color-accent-dark: #4e5b88;
+$color-background: linear-gradient(
+  45deg,
+  rgba(34, 183, 221, 1) 0%,
+  rgba(73, 171, 224, 1) 29%,
+  rgba(131, 153, 227, 1) 72%,
+  rgba(169, 142, 230, 1) 100%
+);
+$color-computer-bg: #005d67;
+$color-computer-border: #7f0000;
+$color-player-border: #3f7f00;
+$color-score-bg: #4e5b88;
+$color-text: rgb(224, 224, 224);
+
+// 📐 Tipografía
+$font-base: sans-serif;
+
+// 📏 Medidas
+$border-radius: 10px;
+$border-thick: 5px;
+
+// Espaciados estándar
+$spacing-xs: 0.25rem;  // 4px
+$spacing-sm: 0.5rem;   // 8px
+$spacing-md: 1rem;     // 16px
+$spacing-lg: 2rem;     // 32px
+$spacing-xl: 4rem;     // 64px
