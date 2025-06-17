@@ -1,11 +1,10 @@
 {
-  "name": "Cronómetro Digital",
-  "short_name": "Cronómetro",
-  "description": "Cronómetro digital con diseño moderno y funcionalidades visuales",
+  "name": "Piedra, papel o tijeras",
+  "short_name": "RPS Game",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "background_color": "#687ab5",
+  "theme_color": "#687ab5",
   "lang": "es",
   "orientation": "portrait",
   "icons": [
