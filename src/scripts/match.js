@@ -34,8 +34,8 @@ export const playMatch = () => {
       // Esperar y luego cambiar las imágenes
       setTimeout(() => {
         compareHands(this.className, computerChoice)
-        playerHand.src = `/assets/hands/${this.className}.png`
-        computerHand.src = `/assets/hands/${computerChoice}.png`
+        playerHand.src = '/rock-paper-scissors/assets/hands/' + this.className + '.png'
+        computerHand.src = '/rock-paper-scissors/assets/hands/' + computerChoice + '.png'
       }, 2000)
     })
   })
