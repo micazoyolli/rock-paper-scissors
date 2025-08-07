@@ -20,10 +20,12 @@ Juego interactivo de piedra, papel o tijeras con animaciones, puntaje dinámico 
 rock-paper-scissors/
 ├── public/
 │   ├── assets/
-│   │   ├── favicon.ico
-│   │   └── screenshot.png
+│   ├── icons/
+│   ├── favicon.ico
 │   ├── manifest.json
-│   └── robots.txt
+│   ├── meta.jpg
+│   ├── robots.txt
+│   └── sitemap.xml
 ├── src/
 │   ├── scripts/
 │   │   ├── match.js
@@ -45,8 +47,10 @@ rock-paper-scissors/
 │   │   │   └── _variables.scss
 │   │   └── main.scss
 │   └── main.js
-├── index.html
+├── .editorconfig
 ├── .gitignore
+├── .nvmrc
+├── index.html
 ├── LICENSE
 ├── package.json
 └── vite.config.js
