@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://micazoyolli.github.io/rock-paper-scissors/sitemap.xml
