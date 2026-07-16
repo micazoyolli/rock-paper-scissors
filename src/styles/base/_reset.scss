@@ -15,6 +15,7 @@ section {
   height: 100%;
 }
 
-button:focus {
-  outline: none;
+button:focus-visible {
+  outline: 3px solid $color-text;
+  outline-offset: 4px;
 }

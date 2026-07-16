@@ -12,7 +12,9 @@ Juego interactivo de piedra, papel o tijeras con animaciones, puntaje dinámico 
 
 - HTML5 + SCSS (con estructura modular)
 - JavaScript moderno (ES6+)
-- Vite
+- Vite 8
+- Node 24
+- @micazoyolli/foundation para SEO/build y reduced motion
 
 ## 📦 Estructura del proyecto
 
@@ -61,6 +63,8 @@ rock-paper-scissors/
 ```bash
 yarn install
 yarn dev
+yarn lint
+yarn build
 ```
 
 Abre `http://localhost:5173/rock-paper-scissors/` para ver la app en el navegador.
