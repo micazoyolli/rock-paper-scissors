@@ -2,7 +2,13 @@
   "name": "Piedra, papel o tijeras",
   "short_name": "RPS Game",
   "lang": "es",
+  "id": "/rock-paper-scissors/",
+  "start_url": ".",
+  "scope": "/rock-paper-scissors/",
+  "display": "standalone",
   "orientation": "portrait",
+  "theme_color": "#687ab5",
+  "background_color": "#687ab5",
   "icons": [
     {
       "src": "icons/icon-192x192.png",
@@ -14,9 +20,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#687ab5",
-  "background_color": "#687ab5"
+  ]
 }
