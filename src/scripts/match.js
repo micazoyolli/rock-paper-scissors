@@ -1,8 +1,18 @@
+import paperHand from '../assets/hands/paper.png'
+import rockHand from '../assets/hands/rock.png'
+import scissorsHand from '../assets/hands/scissors.png'
+
 let pScore = 0
 let cScore = 0
 
 let playerHand
 let computerHand
+
+const handImages = {
+  paper: paperHand,
+  rock: rockHand,
+  scissors: scissorsHand
+}
 
 export const playMatch = () => {
   const options = document.querySelectorAll('.options button')
@@ -37,8 +47,8 @@ export const playMatch = () => {
       // Esperar y luego cambiar las imágenes
       setTimeout(() => {
         compareHands(this.className, computerChoice)
-        playerHand.src = './assets/hands/' + this.className + '.png'
-        computerHand.src = './assets/hands/' + computerChoice + '.png'
+        playerHand.src = handImages[this.className]
+        computerHand.src = handImages[computerChoice]
       }, 2000)
     })
   })
@@ -120,8 +130,8 @@ const updateScore = () => {
     computerScore.classList.add('fadeIn')
 
     // 🌀 Restaurar ambas manos al puño cerrado (rock)
-    playerHand.src = './assets/hands/rock.png'
-    computerHand.src = './assets/hands/rock.png'
+    playerHand.src = rockHand
+    computerHand.src = rockHand
 
     options.forEach(option => {
       option.style.opacity = 1
