@@ -6,7 +6,7 @@ Juego interactivo de piedra, papel o tijeras con animaciones, puntaje dinámico 
 
 ## 🌐 Demo
 
-[Rock Paper Scissors Demo](https://micazoyolli.github.io/rock-paper-scissors/)
+[Rock Paper Scissors Demo](https://rock-paper-scissors.nadia.dev/)
 
 ## 🛠️ Tecnologías
 
@@ -33,7 +33,7 @@ yarn preview
 yarn deploy
 ```
 
-Abre `http://localhost:5173/rock-paper-scissors/` para jugar en local.
+Abre `http://localhost:5173/` para jugar en local.
 
 ## 🗂️ Estructura del proyecto
 
@@ -50,7 +50,7 @@ src/
 
 Este proyecto se publica en GitHub Pages desde la rama `gh-pages`. El comando `yarn deploy` compila la aplicación, limpia archivos `.DS_Store` del build y publica `dist/` usando el CLI de Micazoyolli Foundation sin crear commits de despliegue en `main`.
 
-La configuración `base` de Vite debe conservar la subruta del repositorio: `/rock-paper-scissors/`.
+La aplicación utiliza la raíz `/` como `base` porque se publica en un dominio propio.
 
 ## 🧠 Funcionalidad
 
